@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiService = axios.create({
-  baseURL: process.env.REACT_APP_BACKEND_API || "https://codercars-be-production-f1de.up.railway.app/",
+  baseURL: process.env.REACT_APP_BACKEND_API,
 });
 
 apiService.interceptors.request.use(
